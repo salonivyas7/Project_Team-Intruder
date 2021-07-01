@@ -1,7 +1,7 @@
 FROM ubuntu
 
-LABEL author.email = "pkhokya25@gmail.com"
-LABEL author.name="Prateek Khandelwal"
+LABEL author.email = "salonivys81@gmail.com"
+LABEL author.name ="Saloni Vyas"
 
 
 RUN  apt update -y
@@ -12,8 +12,8 @@ RUN mkdir /python_code
 
 
 
-COPY timepass.py  /python_code/timepass.py
+COPY time.py  /python_code/time.py
 
 
 WORKDIR  /python_code
-CMD  ["python3","timepass.py"] 
+CMD  ["python3","time.py"] 
